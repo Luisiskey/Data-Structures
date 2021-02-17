@@ -10,7 +10,7 @@ class point{
 		double get_y() const{return y; }
 		friend std::istream& operator >>(std::istream& ins, point& target);
 	private:
-		double x, y;
+		double x, y; 
 
 };
 
@@ -20,6 +20,6 @@ point midpoint(const point& point1, const point& point2);
 point operator +(const point& point1, const point& point2);
 bool operator ==(const point& point1, const point& point2);
 bool operator !=(const point& point1, const point& point2);
-std::ostream& operator <<(std:ostream & outs, const point& source);
+std::ostream& operator <<(std::ostream & outs, const point& source);
 
 
