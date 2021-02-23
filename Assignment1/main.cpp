@@ -1,25 +1,28 @@
 #include <iostream>
+#include <cstdlib>
+#include "point.hpp"
+using namespace std;
 
-class point{
-	public:
-		point(double inital_X = 0.0, double inital_y = 0.0);
-		void shift( double x_value, double y_value);
-		void rotate90();
-		//const getter member function
-		double get_x() const{return x; }
-		double get_y() const{return y; }
-		friend std::istream& operator >>(std::istream& ins, point& target);
-	private:
-		double x, y; 
+using namespace ni_point;
+int main(){
+	point a(1,2);
+	point b(1);
+	point c;
 
-};
+	cout<<"Point a is (" << a.get_x()<<","<< a.get_y()<<")"<< endl;
+	cout<<"Point b is (" << b.get_x()<<","<< b.get_y()<<")"<< endl;
+	cout<<"Point c is (" << c.get_x()<<","<< c.get_y()<<")"<< endl;
 
-//nonmember functions
-double distance (const point& point1, const point& point2);
-point midpoint(const point& point1, const point& point2);
-point operator +(const point& point1, const point& point2);
-bool operator ==(const point& point1, const point& point2);
-bool operator !=(const point& point1, const point& point2);
-std::ostream& operator <<(std::ostream & outs, const point& source);
+	point c1, c2;
+	c1 = a + b;
+	c2 = a + b;
+	if (c1 != c2) cout<<"Yay!"<<endl;
+	cout<<"Sum of points a and b is point"<< c1<< endl;
+	point npoint;
+	cout<<"Please enter a point";
+	cin>> npoint;
+	cout << "You enter a point"<< npoint<<endl;
+	return 0;
+}
 
 
