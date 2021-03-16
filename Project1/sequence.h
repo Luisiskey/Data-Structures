@@ -2,8 +2,6 @@
 #define CONTAINER_SEQUENCE_HEADER_FILE
 #include <iostream>
 #include <cstdlib> //size_t
-#include <assert.h>
-using namespace std;
 class sequence
 {
 public: 

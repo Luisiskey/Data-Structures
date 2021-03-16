@@ -74,5 +74,7 @@ void sequence::remove_current(){
         	data[i]= data[i+1];
     	}
 		used--;
+		cout << "The current item has been removed." << endl;
 	} 
 }
+// [1, 3, 33, 4, 6]

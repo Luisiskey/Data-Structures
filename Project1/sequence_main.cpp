@@ -8,10 +8,10 @@ using namespace std;
 
 
 // PROTOTYPES for functions used by this test program:
-void print_menu( );
+void print_menu();
 // Postcondition: A menu of choices for this program has been written to cout.
 
-char get_user_command( );
+char get_user_command();
 // Postcondition: The user has been prompted to enter a one character command.
 // The next character has been read (skipping blanks and newline characters), 
 // and this character has been returned.
@@ -103,8 +103,8 @@ char get_user_command( )
 void show_sequence(sequence display)
 // Library facilities used: iostream
 {
-    for (display.start( ); display.is_item( ); display.advance( ))
-        cout << display.current( ) << endl;
+    for (display.start(); display.is_item(); display.advance())
+        cout << display.current()<< endl;
 }
 
 double get_number( )
