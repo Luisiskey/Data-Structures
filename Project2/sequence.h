@@ -1,5 +1,5 @@
 
-// FILE: sequence2.h
+// FILE: sequence.h
 // CLASS PROVIDED: sequence 
 //
 #ifndef CONTAINER_SEQUENCE_HEADER_FILE
@@ -30,18 +30,10 @@
         bool is_item( ) const;
         value_type current( ) const;
     private:
-/* Fill in your private member variables here.
-        -- You'll need a pointer to a dynamic array, and a size_type
-        -- variable to keep track of the current length of the
-        -- sequence, an index to the current item, and 
-	-- another size_type variable to keep track of the
-        -- complete capacity of the dynamic array.*/
 		value_type* data;
         size_type used;
         size_type current_index;
         size_type capacity;
     };
 	#endif
-
-
 
