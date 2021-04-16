@@ -31,8 +31,7 @@ void sequence::advance(){
 		cout<<"At last index in sequence. Cannot advance, please attach or insert."<<endl;
 	}else{
 		current_index++;
-	}
-	
+	}	
 }
 
 void sequence::insert(const value_type& entry){

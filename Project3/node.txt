@@ -1,0 +1,21 @@
+Files need: node1.h, node1.cpp, sequence3.h
+Turn in: sequence3.cpp, provide implementation file for sequence3.h
+
+The sequence Class Using a Linked List
+Discussion 
+Your sequence class for this assignment will differ from the your previous sequence in the following ways:
+
+The sequence’s items are now stored on a linked list. The head pointer of the linked list is a private member variable of t
+he sequence class. I suggest that you also have a tail pointer as an additional private member variable of the sequence class.
+ The reason for the tail pointer is explained the LinkedListBag lecture.
+Because you are dynamically allocating memory within your sequence class, you will need to define a copy constructor, an assignment 
+operator, and a destructor. You need to pay special attention to the value semantics of your new sequence class – you need not only to 
+make a copy of the linked list, but also need to place the node pointers correctly. Please refer to lectures on LinkedListBag for more 
+detailed discussions on the value semantics.
+Start by studying private member variables and functions in sequence3.h
+
+
+Design a sequence class using a linked list is more complicated than using an array so draw an example linked list when you are writing 
+code for each member function. Always remember to show all the member variables in order to remind you making proper changes of them. 
+Don't forget to place the cursor and the precursor at various locations, head, tail and other places. Also remember that the sequence 
+could be empty, and cursor and/or precursor could be NULL, even when the sequence is NOT empty. 

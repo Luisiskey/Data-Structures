@@ -1,4 +1,4 @@
-#include "sequence.h"
+#include "sequence2.h"
 #include <algorithm>
 #include <iostream>
 #include <string>

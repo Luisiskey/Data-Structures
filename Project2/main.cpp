@@ -3,7 +3,7 @@
 #include <cctype>       // Provides toupper
 #include <iostream>     // Provides cout and cin
 #include <cstdlib>      // Provides EXIT_SUCCESS
-#include "sequence.h"  // With value_type defined as double
+#include "sequence2.h"  // With value_type defined as double
 using namespace std;
 
 
